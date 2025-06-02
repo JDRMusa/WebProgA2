@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <link rel="script" href="Assessment 2.js" type="text/script">
+    <title>Minecraft</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">Abou Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+    </div>
+    <section class="centerbox">
+        <img src="Gw2News2.jpg" class="centered-img">
+        <br>
+        <h1 style="text-align: center;">Time to enter Bava Nisos.</h1>
+        <p>
+            What has been put to rest was only made to grow and fester. The city fallen to the blight of the Titans are now needed to be explored to put a stop on the titan's invasion.
+            Janthir's storms rumble as the final stand against the titans arises. Guild Wars 2 DLC Janthir Wilds' final chapter, Absolution, is going to be released soon on June 3.
+            The hidden story of Bava Nisos and it's history is going to be uncovered in this new update.
+        </p>
+        <img src="Bava Nisos.jpg" class="centered-img">
+        <p>
+            After the survey teams you helped in the barrens grab their new discoveries, all of them ties to one thing: something worse is happeneing in Bava Nisos. Once the city of Mursaat
+            is now a wasteland of twisted and misleading paths. A gate was opened that allowed the titans to attack forcing them to close their doors for the world to be safe form the titan's 
+            infectious spread.
+        </p>
+        <img src="Homestead.jpg" class="centered-img">
+        <p>
+            This final update to the expansion is jam-packed with new stuff as well as quality of life updates, check the news for more information including the schedules and incoming updates.
+            <a href="https://www.guildwars2.com/en/news/studio-update-absolution-launches-june-3">Click here!</a>
+        </p>
+    </section>
+    <button onclick="topFunction()" id="bttb" title="Go to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>

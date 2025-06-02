@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <link rel="script" href="Assessment 2.js" type="text/script">
+    <title>Games</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">About Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+    </div>
+    <section class="centerbox fade-in">
+        <h1 style="text-align: center;">Games</h1>
+        <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 30px;">
+            <a href="A2GamesMinecraft.html" class="game-card">
+                <img src="Minecraft.jpg" alt="Minecraft" class="card-image">
+                <h2>Minecraft</h2>
+                <p>A game where you mine and craft. Express your creativity in this 3d Voxel Sandbox Game.</p>
+            </a>
+            <a href="A2GamesGW2.html" class="game-card">
+                <img src="GW2.jpg" alt="Guild Wars 2" class="card-image">
+                <h2>Guild Wars 2</h2>
+                <p>Enter the world of Tyria, where dragons and creatures arise threatening the world's balance. An MMORPG (Massively Multiplayer Online Role-Playing Game) that has a good story where you can play with others.</p>
+            </a>
+            <a href="A2GamesLOL.html" class="game-card">
+                <img src="LOL.png" alt="League of Legends" class="card-image">
+                <h2>League of Legends</h2>
+                <p>A MOBA (Multiplayer Online Battle Arena) game that is set in Runeterra, a world with magic and magical beings that helped some cities, while others was destroyed by it.</p>
+            </a>
+            <a href="A2GamesTerraria.html" class="game-card">
+                <img src="Terraria.jpg" alt="Terraria" class="card-image">
+                <h2>Terraria</h2>
+                <p>A 2d action adventure sandbox game, where you fight and survive against different enemies and bosses.</p>
+            </a>
+            <a href="A2GamesDST.html" class="game-card">
+                <img src="DST.png" alt="Don't Starve Together" class="card-image">
+                <h2>Don't Starve Together</h2>
+                <p>A sandbox game.</p>
+            </a>
+            <a href="A2GamesREPO.html" class="game-card">
+                <img src="Repo.jpg" alt="R.E.P.O" class="card-image">
+                <h2>R.E.P.O</h2>
+                <p>A sandbox game.</p>
+            </a>
+            <a href="A2GamesMHR.html" class="game-card">
+                <img src="MHR.png" alt="Monster Hunter: Rise" class="card-image">
+                <h2>Monster Hunter: Rise</h2>
+                <p>A sandbox game.</p>
+            </a>
+            <a href="A2GamesGFR.html" class="game-card">
+                <img src="GFR.jpg" alt="Gunfire Reborn" class="card-image">
+                <h2>Gunfire Reborn</h2>
+                <p>A sandbox game.</p>
+            </a>
+            <a href="A2GamesSWORN.html" class="game-card">
+                <img src="Sworn.jpg" alt="SWORN" class="card-image">
+                <h2>SWORN</h2>
+                <p>A sandbox game.</p>
+            </a>
+    </div>
+    </section>
+
+    <button onclick="topFunction()" id="bttb" title="Go to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>

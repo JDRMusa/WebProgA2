@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <link rel="script" href="Assessment 2.js" type="text/script">
+    <title>About Us</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">About Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+    </div>
+    <section class="centerbox fade-in">
+        <h1>Who We Are</h1>
+        <p>At Reaver Reviews, we are passionate about games and having fun — from playing solo or with friends, from old-school legends to the future of gaming. We are a group of enthusiasts, gamers, and gearheads who just wants to have a fun life.</p>
+
+        <h2>What We Do</h2>
+        <p>We bring you the latest news, reviews, and gameplay insights from the world of games. Whether it's a surival horror, a casual fun game, or an obscure genre where not everyone plays, we cover it with passion and precision.</p>
+
+        <h2>Meet the Team</h2>
+        <ul style="padding-left: 20px; list-style: disc;">
+            <li>John - Lead Editor</li>
+            <li>David - Designer & Game Searcher</li>
+            <li>Musa - Game Reviewer & Modder</li>
+        </ul>
+    </section>
+    <button onclick="topFunction()" id="bttb" title="Go to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>

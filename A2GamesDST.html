@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <link rel="script" href="Assessment 2.js" type="text/script">
+    <title>Don't Starve Together</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">About Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+    </div>
+    <div class="headertitle">Don't Starve Together</div>
+    <section class="game-detail-box fade-in">
+        <img src="drift_hunter_banner.jpg" alt="Drift Hunter" class="game-banner">
+
+        <h2 class="game-title">Don't Starve Together</h2>
+        <p class="game-description">
+            Drift Hunter is a web-based drift simulator that lets you tune and drift legendary JDM cars across city streets and mountain passes.
+            Build your dream drift machine with a deep customization system and feel the physics-based handling in every corner.
+        </p>
+
+        <h3 class="game-section-title">Key Features:</h3>
+        <ul class="game-features">
+            <li>20+ JDM legends including AE86, Supra, and RX-7</li>
+            <li>Customizable suspension, turbo, and paint</li>
+            <li>Realistic drift physics & camera angles</li>
+            <li>Playable directly in your browser — no download needed!</li>
+        </ul>
+
+        <a href="https://drift-hunters.com" target="_blank" class="link-button">
+            Play Now
+        </a>
+    </section>
+    <button onclick="topFunction()" id="bttb" title="Go to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>

@@ -1,0 +1,734 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Full size */
+@media (min-width: 1400px) {
+  .news-scale-wrapper {
+    transform: scale(1);
+  }
+}
+
+/* Slightly smaller */
+@media (max-width: 1200px) {
+  .news-scale-wrapper {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1000px) {
+  .news-scale-wrapper {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 800px) {
+  .news-scale-wrapper {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 650px) {
+  .news-scale-wrapper {
+    transform: scale(0.6);
+  }
+}
+  
+@font-face {
+    font-family: 'ArcaneFont';
+    src: url("Arcane Nine.otf");
+}
+
+@font-face {
+    font-family: 'Manuka';
+    src: url(Manuka/Manuka-Black.otf);
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+@font-face {
+    font-family: 'ManukaCondensed';
+    src: url(Manuka/ManukaCondensed-Bold-.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manuka';
+    src: url(Manuka/Manuka-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 15px;
+}
+
+@font-face {
+    font-family: 'ManukaSlab';
+    src: url(Manuka/ManukaSlab-Ultra.otf);
+    font-weight: 1200;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+@font-face {
+    font-family: 'ManukaSlab';
+    src: url(Manuka/ManukaSlab-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+a {
+    color: #00bfff; 
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: #ffcc00; 
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    color: #9999ff; 
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("5630939.jpg");
+    background-size: cover;         
+    background-position: center;   
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    color: #fff;
+}
+
+#navbar {
+    background-color: #794f4f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s ease-in-out;
+    height: 60px;
+    z-index: 999;
+    font-family: "ArcaneFont";
+    padding-left: 5px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f1f3cb;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+#navbar a:hover {
+    background-color: #ff8c00; 
+    color: #000000;
+}
+
+.headertitle {
+    padding-top: 200px;
+    font-family: "ArcaneFont";
+    text-align: center;
+    font-size: 120px;
+    color: #ffebe1;
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.5);
+}
+
+.section-title {
+    font-family: 'ManukaCondensed', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: #fff1e6;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+
+.p h1{
+    font-family: "ManukaCondensed";
+}
+
+.p b{
+    font-family: "ManukaCondensed";
+    font-weight: bold;
+    color: #fff1e6;
+}
+
+.p a{
+    color: #995700;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 30px;
+    display: block;
+}
+
+button:hover {
+    background-color: #e07b00;
+}
+
+.centerbox {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 60px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #7b4f4fd9, rgba(60, 31, 31, 0.85)); 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    font-family: 'ManukaCondensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: #f7f7f7;
+    text-align: left;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    position: relative;
+    overflow: hidden;
+}
+
+.centerbox::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03), transparent 70%);
+    transform: rotate(30deg);
+    z-index: 0;
+}
+
+.centerbox h1, .centerbox h2, .centerbox h3 {
+    font-family: 'ManukaCondensed', sans-serif;
+    color: #fff1e6;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: relative;
+}
+
+.centerbox p {
+    font-family: 'Manuka', sans-serif;
+    font-weight: 300;
+    color: #f7f7f7;
+    line-height: 1.7;
+    z-index: 1;
+    position: relative;
+}
+
+.centerbox.fade-in {
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+.fade-in {
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+  
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#bttb {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 70%; 
+}
+  
+#bttb:hover {
+    opacity: 100%;
+}
+
+form button {
+    background-color: #ff8c00;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+form button:hover {
+    background-color: #e07b00;
+}
+
+.fullbox {
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 40px 60px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(124, 80, 80, 0.357), rgba(60, 31, 31, 0.357)); 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    font-family: 'ManukaCondensed', sans-serif;
+    letter-spacing: 3px;
+    font-size: 28px;
+    color: #c1c1c1;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    position: relative;
+    overflow: hidden; 
+}
+
+.gallery-wrapper {
+    font-family: Arial, sans-serif;
+    display: flex;
+    padding: 40px;
+    display: flex;
+    position: relative;
+    width: auto;
+    border: 0px solid #ff8c0000;
+    background: rgba(255, 219, 180, 0.1);
+    overflow: hidden;
+    align-items: center; 
+}
+
+.gallery-wrapper::before,
+.gallery-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px; /* Adjust width of fade effect */
+    z-index: 2;
+    pointer-events: none; /* Let clicks go through */
+}
+
+.gallery-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(172, 123, 123, 1), rgba(172, 123, 123, 0));
+}
+
+.gallery-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(172, 123, 123, 1), rgba(172, 123, 123, 0));
+}
+
+.gallery-wrapper#news-section {
+    background: linear-gradient(to right, #7b4f4f, #3c1f1f);
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 8px; /* horizontal scroll bar height */
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #ff9100;
+    border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background-color: #995700;
+}
+
+.gallery-item {
+    min-width: 150px;
+    margin: 10px;
+    background: #e0e0e000;
+    padding: 0px;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: auto;       /* Keeps the aspect ratio */     
+    height: 240px;     /*To fix size */
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+    transform-style: preserve-3d;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.gallery-item:hover .image-text {
+    transform: translateY(-20px); /* Moves up slower than image */
+}
+
+.card-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.game-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(255, 140, 0, 0.4);
+  background-color: rgba(255, 140, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.game-card h2 {
+  font-family: 'Manuka', sans-serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #ffae00;
+}
+
+.game-card p {
+  font-family: 'Manuka', sans-serif;
+  font-size: 18px;
+  color: #dddddd;
+}
+
+.game-detail-box {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px 60px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #7b4f4fd9, rgba(60, 31, 31, 0.85));
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    font-family: 'ManukaCondensed', sans-serif;
+    color: #f7f7f7;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.game-banner {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.game-title {
+    font-size: 36px;
+    color: #fff1e6;
+    margin-bottom: 20px;
+    font-family: 'ManukaCondensed', sans-serif;
+}
+
+.game-description {
+    font-family: 'Manuka', sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.game-section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'ManukaCondensed', sans-serif;
+    color: #ffebe1;
+}
+
+.game-features {
+    margin-left: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    list-style: disc;
+    font-family: 'Manuka', sans-serif;
+}
+
+.link-button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #ffcc00;
+}
+
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'ManukaCondensed', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 0;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-family: 'Manuka', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    position: relative;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ccc;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transition: opacity 1s ease;
+}
+
+.loader-content {
+    text-align: center;
+    animation: pulse 1.5s infinite;
+}
+
+.loader-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px #ff8c00);
+}
+
+.loader-text {
+    font-family: 'ArcaneFont', sans-serif;
+    font-size: 28px;
+    color: #ffcc00;
+    text-shadow: 0 0 8px #000;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-width: 960px; /* Optional: stop layout from collapsing when zoomed too far in */
+}
+
+.news-card {
+    width: 100%;              /* Take full width of the grid column */
+    aspect-ratio: 4 / 5;      /* Optional: keeps card proportions */
+    text-decoration: none;
+    color: inherit;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    max-height: 60%;
+}
+
+.news-title {
+    font-family: 'ManukaSlab', sans-serif;
+    margin-top: 15px;
+    font-size: 26px;
+    color: #adadad;
+    letter-spacing: 2px;
+}
+
+.news-description {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: 'Manuka';
+    letter-spacing: 2px;
+}
+
+.news-scale-wrapper {
+  transform-origin: top center;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px 80px;
+  max-width: 1400px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+.review-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.review-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.review-content {
+  padding: 25px;
+  font-family: 'Manuka', sans-serif;
+}
+
+.review-title {
+  font-family: 'ManukaSlab', sans-serif;
+  font-size: 24px;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #f7f7f7;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.review-score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffd700;
+  text-align: right;
+  font-family: 'ManukaCondensed';
+}
+
+.scroll-button {
+    background-color: #006ba6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: #004f7a;
+}

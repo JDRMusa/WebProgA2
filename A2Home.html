@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <title>Reaver Reviews</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">Latest News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">About Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" title="Toggle Audio" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+        <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    </div>
+    <div>
+        <p style="text-align: center;">
+            <h1 class="headertitle fade-in" style="color: #bedafc;">REAVER REVIEWS</h1>
+        </p>
+    </div>
+    <div class="centerbox">
+        <p style="text-align: center;">
+            Where games are reaped and reviewed for your entertainment!
+        </p>
+    </div>
+    <h1 class="section-title">Games Reviewed</h1>
+    <div class="gallery-wrapper">
+        <button class="scroll-button left" onclick="scrollGallery('gallery-reviewed', -450)">&#9664;</button>
+        <div class="gallery" id="gallery-reviewed">
+            <div class="gallery-item"><img src="Minecraft.jpg" alt="Minecraft" title="Minecraft"></div>
+            <div class="gallery-item"><img src="GW2.jpg" alt="Guild Wars 2" title="Guild Wars 2"></div>
+            <div class="gallery-item"><img src="LOL.png" alt="League of Legends" title="League of Legends"></div>
+            <div class="gallery-item"><img src="Terraria.jpg" alt="Terraria" title="Terraria"></div>
+            <div class="gallery-item"><img src="DST.png" alt="Don't Starve Together" title="Don't Starve Together"></div>
+            <div class="gallery-item"><img src="Repo.jpg" alt="R.E.P.O" title="R.E.P.O"></div>
+            <div class="gallery-item"><img src="MHR.png" alt="Monster Hunter: Rise" title="Monster Hunter: Rise"></div>
+            <div class="gallery-item"><img src="GFR.jpg" alt="Gunfire Reborn" title="Gunfire Reborn"></div>
+            <div class="gallery-item"><img src="Sworn.jpg" alt="SWORN" title="SWORN"></div>
+        </div>
+        <button class="scroll-button right" onclick="scrollGallery('gallery-reviewed', 450)">&#9654;</button>
+    </div>
+    <br>
+    <p><h1 class="section-title">Latest News</h1></p>
+    <br>
+    <div class="gallery-wrapper">
+        <button class="scroll-button left" onclick="scrollGallery('gallery-news', -450)">&#9664;</button>
+        <div class="gallery" id="gallery-news" >
+            <a href="A2MNews.html" class="gallery-item">
+                <img src="MNews2.png" alt="Minecraft News">
+                <div class="image-text">Minecraft News</div>
+            </a>
+            <a href="A2GW2News.html" class="gallery-item">
+                <img src="GW2News1.png" alt="ArenaNet GW2 News">
+                <div class="image-text">Guild Wars 2 News</div>
+            </a>
+            <a href="A2LoLNews.html" class="gallery-item">
+                <img src="LoLNews.png" alt="LoL News">
+                <div class="image-text">League of Legends News</div>
+            </a>
+            <a href="A2SWORNNews.html" class="gallery-item">
+                <img src="SwornNews.jpg" alt="SWORN News">
+                <div class="image-text">SWORN News</div>
+            </a>
+            <a href="A2DSTNews.html" class="gallery-item">
+                <img src="DST.png" alt="Don't Starve Together News">
+                <div class="image-text">Don't Starve Together News</div>
+            </a>
+        </div>
+        <button class="scroll-button right" onclick="scrollGallery('gallery-news', 450)">&#9654;</button>
+    </div>
+    <button onclick="topFunction()" id="bttb" title="Back to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>

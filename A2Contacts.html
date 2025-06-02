@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment 2.css" type="text/css">
+    <link rel="script" href="Assessment 2.js" type="text/script">
+    <title>Contacts</title>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+          <img src="Logo_v2.png" alt="Loading Logo" class="loader-logo">
+          <p class="loader-text">Revving the Reaver...</p>
+         </div>
+    </div>
+    <div id="navbar">
+        <a href="A2Home.html"><img class="logo" src="Logo_v2.png"></a>
+        <a href="A2Home.html">Home</a>
+        <a href="A2News.html">News</a>
+        <a href="A2Games.html">Games</a>
+        <a href="A2Reviews.html">Reviews</a>
+        <a href="A2AboutUs.html">About Us</a>
+        <a href="A2Contacts.html">Contacts</a>
+        <audio id="background_audio" autoplay="autoplay" loop> <!-- <audio> is for audio in the html -->
+            <source src="Enemy.mp3"/> <!-- <source> is for citing the source for the tag, it's usually a file or media -->
+        </audio>
+        <!-- <input> is an HTML tag that allows user to input data, the input can vary but for this one is a button. In this code it is used to make an image into a button -->
+        <input type="image" id="button" src="speakeron.png" width="60" height="60" align="right" style="padding-right: 5px;" alt="Speaker_Icon.svg">
+    </div>
+    <div>
+        <br>
+    </div>
+    <section class="centerbox fade-in">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feedback, or business inquiries, feel free to reach out!</p>
+
+    <div style="margin-top: 30px;">
+        <h2>Contact Information</h2>
+        <p><b>Email:</b> <a href="mailto:info@reaverreviews.com">info@jdmreviews.com</a></p>
+        <p><b>Phone:</b> +1 (555) 123-4567</p>
+        <p><b>Location:</b> Dubai, UAE</p>
+        <p><b>Map:</b> <a href="https://www.google.com/maps/place/Dubai" target="_blank">View on Google Maps</a></p>
+    </div>
+
+    <div style="margin-top: 40px;">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; font-family: 'Manuka';">
+            <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border-radius: 8px; border: none;">
+            <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border-radius: 8px; border: none;">
+            <textarea name="message" rows="6" placeholder="Your Message" required style="padding: 12px; border-radius: 8px; border: none;"></textarea>
+            <button type="submit" style="background-color: #ff8c00; color: black; padding: 12px; border-radius: 8px; font-size: 20px; border: none; cursor: pointer;">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <button onclick="topFunction()" id="bttb" title="Go to top">&#8593;</button>
+    <!-- This is important, the <script> allows the html to use the javascript to run within the code-->
+    <script src="Assessment 2.js"></script>
+</body>
+</html>
